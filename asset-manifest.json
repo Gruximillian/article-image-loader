@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/article-image-loader/react-version/build/static/css/main.fbac2a9d.chunk.css",
+    "main.js": "/article-image-loader/react-version/build/static/js/main.da988bcd.chunk.js",
+    "main.js.map": "/article-image-loader/react-version/build/static/js/main.da988bcd.chunk.js.map",
+    "runtime-main.js": "/article-image-loader/react-version/build/static/js/runtime-main.8bfb7a2d.js",
+    "runtime-main.js.map": "/article-image-loader/react-version/build/static/js/runtime-main.8bfb7a2d.js.map",
+    "static/js/2.db433199.chunk.js": "/article-image-loader/react-version/build/static/js/2.db433199.chunk.js",
+    "static/js/2.db433199.chunk.js.map": "/article-image-loader/react-version/build/static/js/2.db433199.chunk.js.map",
+    "index.html": "/article-image-loader/react-version/build/index.html",
+    "precache-manifest.8ceb52c59a1a7d186a9c0c080e17c0b7.js": "/article-image-loader/react-version/build/precache-manifest.8ceb52c59a1a7d186a9c0c080e17c0b7.js",
+    "service-worker.js": "/article-image-loader/react-version/build/service-worker.js",
+    "static/css/main.fbac2a9d.chunk.css.map": "/article-image-loader/react-version/build/static/css/main.fbac2a9d.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bfb7a2d.js",
+    "static/js/2.db433199.chunk.js",
+    "static/css/main.fbac2a9d.chunk.css",
+    "static/js/main.da988bcd.chunk.js"
+  ]
+}
