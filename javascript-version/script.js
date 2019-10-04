@@ -8,7 +8,7 @@ let numberOfTimesLoaded = 0;
 
 loadButton.addEventListener('click', () => {
     const loadedImageIndex = numberOfTimesLoaded % numOfImages;
-    const imageSource = `../img/${imageNames[loadedImageIndex]}`;
+    const imageSource = `../react-version/public/img/${imageNames[loadedImageIndex]}`;
     numberOfTimesLoaded++;
 
     updateImageSource(imageSource, imageContainer);
@@ -16,8 +16,9 @@ loadButton.addEventListener('click', () => {
 
 function updateImageSource(source, container) {
     const image = container.querySelector('img');
+
     image.src = '';
-    image.classList.remove('hidden');
+    image.classList.add('visible');
 
     container.classList.remove('loading-error');
     container.classList.add('loading');
@@ -27,13 +28,13 @@ function updateImageSource(source, container) {
             if (response.ok) {
                 image.src = source;
             } else {
-                image.classList.add('hidden');
+                image.classList.remove('visible');
                 container.classList.add('loading-error');
             }
         })
         .catch(error => {
             console.error(error);
-            image.classList.add('hidden');
+            image.classList.remove('visible');
             container.classList.add('loading-error');
         })
         .finally(() => {

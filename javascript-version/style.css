@@ -31,10 +31,11 @@ body {
 
 .image-container-with-loader img {
     width: 100%;
+    display: none;
 }
 
-.image-container-with-loader img.hidden {
-    display: none;
+.image-container-with-loader img.visible {
+    display: block;
 }
 
 .image-container-with-loader::before {
