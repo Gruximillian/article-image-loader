@@ -1,5 +1,6 @@
 {
   "name": "react-version",
+  "homepage": "https://gruximillian.github.io/article-image-loader/react-version/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
