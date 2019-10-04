@@ -5,13 +5,12 @@ const imageNames = ['galaxies.png', 'bridge.jpg', 'stars.jpg', 'sombrero.jpg'];
 
 function App() {
     const [numberOfTimesLoaded, setNumberOfTimesLoaded] = useState(0);
-    const [imageIndex, setImageIndex] = useState(undefined);
-
-    const imageName = imageNames[imageIndex];
+    const [imagePath, setImagePath] = useState(undefined);
 
     function loadImage() {
         setNumberOfTimesLoaded(numberOfTimesLoaded + 1);
-        setImageIndex(numberOfTimesLoaded % imageNames.length);
+        const imageName = imageNames[numberOfTimesLoaded % imageNames.length];
+        setImagePath(`img/${imageName}`);
     }
 
     return (
@@ -27,8 +26,8 @@ function App() {
 
             <div className="container image-container-with-loader">
                 {
-                    imageName &&
-                    <img src={`img/${imageName}`} alt="image placeholder"/>
+                    imagePath &&
+                    <img src={imagePath} alt="image placeholder"/>
                 }
             </div>
         </div>
