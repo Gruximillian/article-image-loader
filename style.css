@@ -47,12 +47,12 @@ body {
     left: 50%;
 }
 
-.loading-error::before {
-    content: '\2A2F';
-    transform: translate3d(-50%, -50%, 0);
-    color: red;
-    font-size: 50px;
-}
+/*.loading-error::before {*/
+    /*content: '\2A2F';*/
+    /*transform: translate3d(-50%, -50%, 0);*/
+    /*color: red;*/
+    /*font-size: 50px;*/
+/*}*/
 
 .loading::before {
     content: '';
